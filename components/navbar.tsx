@@ -44,10 +44,10 @@ const NavBar = () => {
           </div> */}
         </div>
         <div className='logout-sidebar'>
-          <a href='/api/auth/logout'>
+          <Link href='/api/auth/logout'>
             <button className='logout-button'>LOGOUT</button>
-          </a>
-        </div>
+          </Link>
+           </div>
       </div>
     </UserProvider>
   )

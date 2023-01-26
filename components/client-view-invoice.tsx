@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { Button } from '@chakra-ui/react';
 import { updateData } from '../utils/dataFetch';
 import { invoiceFields } from '../utils/types';
+import Link from 'next/link';
 
 const ClientViewInvoice = ({
   invoice,
@@ -21,7 +22,7 @@ const ClientViewInvoice = ({
   // TODO; check what is the type of invoice._id
   const updateStatus = async (invoice: invoiceFields) => {
 
-  const newInvoiceStatus = invoice._id && await updateData(invoice._id, invoice);
+    const newInvoiceStatus = invoice._id && await updateData(invoice._id, invoice);
 
     setInvoiceStatus(newInvoiceStatus.paid);
   };
@@ -42,11 +43,11 @@ const ClientViewInvoice = ({
           {invoiceStatus ? (
             <div>
               <h1>Thanks for your payment!</h1>
-              <a href='/'>
+              <Link href='/'>
                 <Button bg='#bfdbfe' size='lg'>
                   BACK TO HOME
                 </Button>
-              </a>
+              </Link>
             </div>
           ) : (
             <div className='invoice-box'>

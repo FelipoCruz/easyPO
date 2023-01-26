@@ -8,6 +8,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import { getData } from '../utils/dataFetch';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const LandingPage = () => {
   const router = useRouter();
@@ -38,9 +39,9 @@ const LandingPage = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.loginBox}>
-          <a className='FreelancerLoginButton' href='/user-home/invoice-list2'>
+          <Link className='FreelancerLoginButton' href='/user-home/invoice-list2'>
             <h2>Log In to My Invoices</h2>
-          </a>
+          </Link>
           <span className={styles.arrow}>
             <BsArrowRight />
           </span>
