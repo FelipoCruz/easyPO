@@ -1,4 +1,4 @@
-import { getData } from '../../utils/dataFetch';
+/* import { getData } from '../../utils/dataFetch';
 import { useEffect, useState } from 'react';
 import { invoiceFields } from '../../utils/types';
 
@@ -34,3 +34,4 @@ function Clients2() {
 };
 
 export default Clients2;
+ */
