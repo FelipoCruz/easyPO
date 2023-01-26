@@ -1,0 +1,64 @@
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  padding: 15px;
+  align-items: flex-end;
+  background-color: rgb(220 235 255);
+}
+
+.menuIcon {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -15px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+}
+
+.menuItem:focus {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px 7px 0px 0px;
+}
+
+/* .menuItem:target {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px 7px 0px 0px;
+} */
+
+.create-invoice-sidebar {
+  display: flex;
+  flex-direction: row;
+}
+
+.invoice-list-sidebar {
+  display: flex;
+  flex-direction: row;
+}
+
+.client-list-sidebar {
+  display: flex;
+  flex-direction: row;
+}
+
+.logout-sidebar {
+  display: flex;
+  width: 250px;
+  font-weight: 600;
+  /* height: 103px; */
+  justify-content: center;
+  align-items: center;
+}

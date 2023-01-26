@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@900&display=swap');
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  background: rgb(191, 219, 254);
+  border-bottom-width: 1px;
+}
+
+.logo {
+  padding: 20px;
+  margin-left: 50px;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 40vh;
+  margin-top: 150px;
+  float: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 50px;
+}
+
+.loginBox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: black;
+}
+.arrow {
+  padding: 18px;
+}
+
+.loginBox:hover {
+  opacity: 0.4;
+}
+
+.inputBox {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.payButton {
+  display: flex;
+  justify-content: center;
+}
